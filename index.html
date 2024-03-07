@@ -1,0 +1,62 @@
+     <html>
+            <head>
+                <style>
+                    body {{
+                        font-family: Arial, sans-serif;
+                        color: white;
+                        background-color: black;
+                    }}
+                    h2 {{
+                        color: white;
+                        font-size: 25px;
+                        text-align: center;
+                    }}
+                    h1 {{
+                        color: #333333;
+                        font-size: 40px;
+                        text-align: center;
+                        background-color: yellow;
+                    }}
+                    p {{
+                        color: white;
+                        font-size: 30px;
+                        line-height: 1.5;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }}
+                    p1 {{
+                        font-size: 10px;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }}
+                    table {{
+                        width: 100%;
+                        border-collapse: collapse;
+                    }}
+                    th, td {{
+                        border: 1px solid white;
+                        padding: 8px;
+                        text-align: left;
+                    }}
+                    th {{
+                        background-color: #333333;
+                        color: white;
+                    }}
+                    tr:nth-child(even) {{
+                        background-color: #555555;
+                    }}
+                </style>
+            </head>
+            <body>
+                <p> ----- AWS All Account report for Team Platform (from {str_one_week_ago} to {str_today}) ----- </p>
+                <h2> {message_weekly} </h2>
+                <h1> <strong> <em> {total_cost_weekly} </em></strong> </h1>
+                <h3> ----- The detailed cost by service can be found in table below ----- </p>
+
+                <table>
+                    {html_table_weekly}
+                </table>
+                <p1></p1>
+            </body>
+        </html>
