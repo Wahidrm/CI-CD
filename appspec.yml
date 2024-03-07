@@ -1,7 +1,7 @@
 version: 0.0
 os: ubuntu
 files:
- - source: /index.html
+ - source: /contact.html
    destination: /var/www/html/
 hooks:
  BeforeInstall:
